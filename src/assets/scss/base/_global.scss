@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: $font-primary;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: $color-black;
+    line-height: 1.2;
+    background: $color-white;
+}
+
+.container {
+    display: block;
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    @include mq('tablet') {
+        max-width: 730px;
+    }
+
+    @include mq('bootstrap-lg') {
+        max-width: 890px;
+    }
+
+    @include mq('desktop') {
+        max-width: 1200px;
+    }
+}
+
+%reset-ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.img-fluid{
+    width: 100%;
+    height: auto;
+}
+ul{
+    list-style-type: none;
+    color: $font-primary;
+}
+a{
+    text-decoration: none;
+}
